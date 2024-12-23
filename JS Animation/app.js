@@ -130,3 +130,30 @@
 // pause.addEventListener('click', () => tweek.pause())
 // restart.addEventListener('click', () => tweek.restart());
 
+
+
+
+
+//timelines:
+
+let tl = gsap.timeline({
+    defaults: {
+        duration: 2,
+    }
+});
+
+tl.to('.box1', {
+    scale: 0,
+    opacity: 0,
+    delay: 1,
+
+}).to('.box2', {
+
+    x: -100
+}).to('.box1', {
+
+    scale: 1,
+    opacity: 1,
+    background: 'crimson'
+})
+
