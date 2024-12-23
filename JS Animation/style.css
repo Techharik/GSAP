@@ -33,3 +33,16 @@ html {
     border-radius: 100%;
     background-color: green;
 }
+
+/* h1 {
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+}
+
+*/
+
+.char {
+    display: inline-block;
+
+}

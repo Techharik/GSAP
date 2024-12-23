@@ -136,24 +136,48 @@
 
 //timelines:
 
-let tl = gsap.timeline({
-    defaults: {
-        duration: 2,
-    }
-});
+// let tl = gsap.timeline({
+//     defaults: {
+//         duration: 2,
+//     }
+// });
 
-tl.to('.box1', {
-    scale: 0,
-    opacity: 0,
-    delay: 1,
+// tl.to('.box1', {
+//     scale: 0,
+//     opacity: 0,
+//     delay: 1,
 
-}).to('.box2', {
+// }).to('.box2', {
 
-    x: -100
-}).to('.box1', {
+//     x: -100
+// }).to('.box1', {
 
-    scale: 1,
-    opacity: 1,
-    background: 'crimson'
+//     scale: 1,
+//     opacity: 1,
+//     background: 'crimson'
+// })
+const textElement = document.querySelector('h1');
+
+// Split text into individual characters
+const chars = textElement.innerText.split('');
+textElement.innerHTML = chars.map(char => `<span class="char">${char}</span>`).join('');
+
+// Select all `.char` elements
+const charElements = document.querySelectorAll('h1 .char');
+console.log(charElements); // Logs all span elements wrapping individual characters
+
+// GSAP Animation: Animate each letter
+gsap.to(charElements, {
+    y: 0
 })
 
+gsap.to(charElements, {
+    y: 50, // Letters start below
+    stagger: {
+        amount: 2,       // Total stagger duration
+        from: 'start'   // Stagger animation in random order
+    },
+    ease: "power1.out", // Easing effect for smoother animation
+    duration: 1,
+    delay: 1   // Duration of each animation
+});
