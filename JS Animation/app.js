@@ -71,23 +71,45 @@
 
 //from fromTo - you have to sepific devalut fale and new animation state.
 
-gsap.from('.box1', {
-    y: -200,
-    duration: 2,
-    ease: 'linear',
-    repeat: -1,
-    yoyo: true
-})
+// gsap.from('.box1', {
+//     y: -200,
+//     duration: 2,
+//     ease: 'linear',
+//     repeat: -1,
+//     yoyo: true
+// })
 
 
-gsap.fromTo('.box2', {
-    y: 200,
-    opacity: 0
-}, {
-    opacity: 1,
-    y: -200,
-    duration: 3,
-    ease: 'linear',
-    borderRadius: 0,
-    repeat: -1
-})
+// gsap.fromTo('.box2', {
+//     y: 200,
+//     opacity: 0
+// }, {
+//     opacity: 1,
+//     y: -200,
+//     duration: 3,
+//     ease: 'linear',
+//     borderRadius: 0,
+//     repeat: -1
+// });
+
+
+// stagger
+
+
+// gsap.set('.box', {
+//     borderRadius: 0,
+// })
+
+// gsap.to('.box', {
+//     borderRadius: 100,
+//     duration: 2,
+//     y: -100,
+//     repeat: -1,
+//     yoyo: true,
+//     stagger: {
+//         amount: 10,
+//         ease: 0.5,
+//         from: 'random'
+//     }
+// })
+
