@@ -113,3 +113,20 @@
 //     }
 // })
 
+// const play = document.querySelector('.play')
+// const pause = document.querySelector('.pause')
+// const restart = document.querySelector('.restart')
+
+// const tweek = gsap.to('.box', {
+//     y: -150,
+//     background: 'red',
+//     duration: 3,
+//     repeat: -1,
+//     yoyo: true,
+//     ease: 'linear'
+// })
+
+// play.addEventListener('click', () => tweek.play())
+// pause.addEventListener('click', () => tweek.pause())
+// restart.addEventListener('click', () => tweek.restart());
+
