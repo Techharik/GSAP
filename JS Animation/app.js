@@ -156,28 +156,28 @@
 //     opacity: 1,
 //     background: 'crimson'
 // })
-const textElement = document.querySelector('h1');
+// const textElement = document.querySelector('h1');
 
 // Split text into individual characters
-const chars = textElement.innerText.split('');
-textElement.innerHTML = chars.map(char => `<span class="char">${char}</span>`).join('');
+// const chars = textElement.innerText.split('');
+// textElement.innerHTML = chars.map(char => `<span class="char">${char}</span>`).join('');
 
-// Select all `.char` elements
-const charElements = document.querySelectorAll('h1 .char');
-console.log(charElements); // Logs all span elements wrapping individual characters
+// // Select all `.char` elements
+// const charElements = document.querySelectorAll('h1 .char');
+// console.log(charElements); // Logs all span elements wrapping individual characters
 
-// GSAP Animation: Animate each letter
-gsap.to(charElements, {
-    y: 0
-})
+// // GSAP Animation: Animate each letter
+// gsap.to(charElements, {
+//     y: 0
+// })
 
-gsap.to(charElements, {
-    y: 50, // Letters start below
-    stagger: {
-        amount: 2,       // Total stagger duration
-        from: 'start'   // Stagger animation in random order
-    },
-    ease: "power1.out", // Easing effect for smoother animation
-    duration: 1,
-    delay: 1   // Duration of each animation
-});
+// gsap.to(charElements, {
+//     y: 50, // Letters start below
+//     stagger: {
+//         amount: 2,       // Total stagger duration
+//         from: 'start'   // Stagger animation in random order
+//     },
+//     ease: "power1.out", // Easing effect for smoother animation
+//     duration: 1,
+//     delay: 1   // Duration of each animation
+// });
