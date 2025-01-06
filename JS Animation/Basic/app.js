@@ -26,7 +26,19 @@ gsap.to('.box2', {
     repeat: -1,
     yoyo: true,
 })
+gsap.set('.box-3', {
+    x: 0,
+    width: 0,
+    opacity: 0,
+})
 
+gsap.to('.box-3', {
+    x: -50,
+    width: "50%",
+    opacity: 1,
+    duration: 2,
+    repeat: -1,
+})
 
 const container = document.querySelector('.particle-container');
 const particleCount = 100; // Number of particles
@@ -67,4 +79,7 @@ function moveParticle(particle) {
 }
 
 // Start animations for all particles
-particles.forEach(moveParticle);
+// particles.forEach(moveParticle);
+
+
+
