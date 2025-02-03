@@ -166,6 +166,7 @@
 // const charElements = document.querySelectorAll('h1 .char');
 // console.log(charElements); // Logs all span elements wrapping individual characters
 
+
 // // GSAP Animation: Animate each letter
 // gsap.to(charElements, {
 //     y: 0
